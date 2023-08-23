@@ -1,0 +1,25 @@
+INSERT INTO `tmdt_fcblue`.`role` (`name`, `status`)  VALUES ('ADMIN',1);
+INSERT INTO `tmdt_fcblue`.`role` (`name`, `status`) VALUES ('SUPPLIER',1);
+INSERT INTO `tmdt_fcblue`.`role` (`name`, `status`)  VALUES ('USER',1);
+
+INSERT INTO `tmdt_fcblue`.`category`  (`name`, `status`) VALUES ('Thời Trang',1);
+INSERT INTO `tmdt_fcblue`.`category`  (`name`, `status`) VALUES ('Điện Thoại & Phụ Kiện',1);
+INSERT INTO `tmdt_fcblue`.`category` (`name`, `status`) VALUES ('Thiết Bị Điện Tử',1);
+INSERT INTO `tmdt_fcblue`.`category`  (`name`, `status`) VALUES ('Đồ Gia Dụng',1);
+INSERT INTO `tmdt_fcblue`.`category`  (`name`, `status`) VALUES ('Đồ Chơi',1);
+INSERT INTO `tmdt_fcblue`.`category`  (`name`, `status`) VALUES ('Hàng Tiêu Dùng',1);
+
+INSERT INTO `tmdt_fcblue`.`users` (`address`, `email`, `name`, `password`, `phone`) VALUES ('HN', 'hoang@gmail.com', 'hoang', '123456', '0987654321');
+INSERT INTO `tmdt_fcblue`.`users` (`address`, `email`, `name`, `password`, `phone`) VALUES ('ND', 'lien@gmail.com', 'lien', '123456', '1234567890');
+INSERT INTO `tmdt_fcblue`.`users` (`address`, `email`, `name`, `password`, `phone`) VALUES ('TN', 'thang@gmail.com', 'thang', '123456', '1234509876');
+
+INSERT INTO `tmdt_fcblue`.`account` (`status`, `role_id`, `users_id`) VALUES (1, '1', '1');
+INSERT INTO `tmdt_fcblue`.`account` (`status`, `role_id`, `users_id`) VALUES (1, '2', '2');
+INSERT INTO `tmdt_fcblue`.`account` (`status`, `role_id`, `users_id`) VALUES (1, '3', '3');
+
+
+INSERT INTO `tmdt_fcblue`.`status_bill` (`name`) VALUES ('Chờ xác nhận');
+INSERT INTO `tmdt_fcblue`.`status_bill` (`name`) VALUES ('Đang giao');
+INSERT INTO `tmdt_fcblue`.`status_bill` (`name`) VALUES ('Xác nhận');
+INSERT INTO `tmdt_fcblue`.`status_bill` (`name`) VALUES ('Đã nhận');
+INSERT INTO `tmdt_fcblue`.`status_bill` (`name`) VALUES ('Hủy đơn');
